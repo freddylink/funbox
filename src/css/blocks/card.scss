@@ -1,0 +1,196 @@
+.card {
+  max-width: 320px;
+
+  &__image {
+    position: relative;
+    margin-bottom: 12px;
+    background: url('/src/images/cat.png') no-repeat;
+    width: 320px;
+    height: 480px;
+  }
+
+  &__info {
+    padding: 20px 40px 0 47px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-family: "Trebuchet MS", sans-serif;
+    color: rgb(102, 102, 102);
+    line-height: 1.2;
+    padding-bottom: 4px;
+
+    &-active {
+     display: block;
+    }
+
+    &-selected {
+      color: #e62e7a;
+      display: none;
+    }
+  }
+
+  &__caption {
+    font-size: 24px;
+    font-family: "Trebuchet MS", sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    line-height: 1.2;
+    padding-bottom: 12px;
+  }
+
+  &__options {
+    font-size: 14px;
+    font-family: "Trebuchet MS", sans-serif;
+    color: rgb(102, 102, 102);
+    font-weight: bold;
+    line-height: 1.143;
+  }
+
+  &__weight {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    background: #1698d9;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+
+    &-container {
+      top: 50%;
+      position: relative;
+      @include transform(translateY(-50%));
+    }
+
+    &-amount {
+      font-size: 42px;
+      font-family: "Trebuchet MS", sans-serif;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      position: relative;
+      display: block;
+    }
+    &-text {
+      font-size: 21px;
+      font-family: "Trebuchet MS", sans-serif;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      position: relative;
+    }
+  }
+
+  &__subscribe {
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    font-family: "Trebuchet MS", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.231;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.004);
+
+    &-active {
+      display: block;
+    }
+
+    &-selected {
+      display: none;
+    }
+
+    &-disabled {
+      display: none;
+    }
+  }
+
+  &:hover {
+    .card {
+      &__weight {
+        background: #2ea8e6;
+      }
+
+      &__image {
+        background: url('/src/images/cat-hover.png') no-repeat;
+      }
+    }
+  }
+
+  &_selected {
+    .card {
+      &__image {
+        background: url('/src/images/cat-selected.png') no-repeat;
+      }
+
+      &__weight {
+        background: #d91667;
+      }
+
+      &__subscribe-active {
+        display: none;
+      }
+
+      &__subscribe-selected {
+        display: block;
+      }
+    }
+
+    &:hover {
+      .card {
+        &__image {
+          background: url('/src/images/cat-selected-hover.png') no-repeat;
+        }
+
+        &__weight {
+          background: #e62e7a;
+        }
+
+        &__title-active {
+          display: none;
+        }
+
+        &__title-selected {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &_disabled {
+    .card {
+      &__image {
+        background: url('/src/images/cat-disabled.png') no-repeat;
+      }
+
+      &__weight {
+        background: #b3b3b3;
+      }
+
+      &__subscribe {
+        color: #ffff66;
+
+        &-active, &-selected {
+          display: none;
+        }
+
+        &-disabled {
+          display: block;
+        }
+      }
+    }
+
+    &:hover {
+      .card {
+        &__image {
+          background: url('/src/images/cat-disabled.png') no-repeat;
+        }
+
+        &__weight {
+          background: #b3b3b3;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1120px) {
+    margin: 0 auto;
+  }
+}

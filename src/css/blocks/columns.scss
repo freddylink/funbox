@@ -1,0 +1,25 @@
+.columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__item {
+    @media(max-width: 1120px) {
+      width: 50%;
+      padding-bottom: 20px;
+
+      &:last-of-type {
+        width: 100%;
+      }
+    }
+
+    @media(max-width: 767px) {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 1120px) {
+
+  }
+}

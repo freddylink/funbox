@@ -1,0 +1,26 @@
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+
+
+h1, .h1 {
+  font-family: "Exo", sans-serif;
+  font-size: 36px;
+  color: #fff;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.004);
+}
+
+h2, .h2 {
+  font-size: 48px;
+  font-family: "Trebuchet MS", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.2;
+}
+

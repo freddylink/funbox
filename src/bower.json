@@ -1,0 +1,22 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.1",
+  "homepage": "",
+  "authors": [
+    ""
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components/",
+    "",
+    ""
+  ],
+  "dependencies": {
+    "bourbon": "~4.2.5",
+    "susy": "~2.2.14",
+    "jquery": "~2.1.4"
+  }
+}

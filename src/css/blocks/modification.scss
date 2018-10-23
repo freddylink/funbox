@@ -1,0 +1,14 @@
+.m-align_center {
+  text-align: center;
+
+}
+
+.m-border-color {
+  &_blue {
+    border-color: #1698d9;
+  }
+}
+
+.m-wrap-string {
+  display: block;
+}

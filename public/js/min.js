@@ -1,0 +1,1 @@
+$(document).ready(function(){!function(){var n=$(".card__image"),c=$(".link_blue");function e(n){n.on("mouseleave",function(){n.toggleClass("card_selected"),n.unbind("mouseleave")})}n.on("click",function(){e($(this).parent(".card"))}),c.click(function(){e($(this).closest(".card"))})}()});

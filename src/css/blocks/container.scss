@@ -1,0 +1,12 @@
+.container {
+  position: relative;
+  max-width: 1120px;
+  margin: 0 auto;
+  top: 50%;
+  @include transform(translateY(-50%));
+
+  @media (max-width: 1120px) {
+    top: 0;
+    @include transform(translateY(0));
+  }
+} 

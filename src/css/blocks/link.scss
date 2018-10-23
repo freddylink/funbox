@@ -1,0 +1,19 @@
+.link {
+  text-decoration: none;
+
+
+  &_decorate {
+    border-bottom: 1px solid #1698d9;
+    border-bottom-style: dotted;
+    border-bottom-width: medium;
+
+    &:hover {
+      border-bottom: 1px solid transparent;
+    }
+  }
+
+  &_blue {
+    color: #1698d9;
+  }
+
+}
