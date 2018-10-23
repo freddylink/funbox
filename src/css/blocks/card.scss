@@ -4,7 +4,7 @@
   &__image {
     position: relative;
     margin-bottom: 12px;
-    background: url('/src/images/cat.png') no-repeat;
+    background: url('src/images/cat.png') no-repeat;
     width: 320px;
     height: 480px;
   }
@@ -109,7 +109,7 @@
       }
 
       &__image {
-        background: url('/src/images/cat-hover.png') no-repeat;
+        background: url('src/images/cat-hover.png') no-repeat;
       }
     }
   }
@@ -117,7 +117,7 @@
   &_selected {
     .card {
       &__image {
-        background: url('/src/images/cat-selected.png') no-repeat;
+        background: url('src/images/cat-selected.png') no-repeat;
       }
 
       &__weight {
@@ -136,7 +136,7 @@
     &:hover {
       .card {
         &__image {
-          background: url('/src/images/cat-selected-hover.png') no-repeat;
+          background: url('src/images/cat-selected-hover.png') no-repeat;
         }
 
         &__weight {
@@ -157,7 +157,7 @@
   &_disabled {
     .card {
       &__image {
-        background: url('/src/images/cat-disabled.png') no-repeat;
+        background: url('src/images/cat-disabled.png') no-repeat;
       }
 
       &__weight {
@@ -180,7 +180,7 @@
     &:hover {
       .card {
         &__image {
-          background: url('/src/images/cat-disabled.png') no-repeat;
+          background: url('src/images/cat-disabled.png') no-repeat;
         }
 
         &__weight {
