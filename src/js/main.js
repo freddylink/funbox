@@ -11,7 +11,9 @@ $(document).ready(function () {
         }
 
         $cards.on('click', function() {
-            changeColor($(this).parent('.card'));
+            if (!$(this).parent('.card_disabled')) {
+                changeColor($(this).parent('.card'));
+            }
         });
 
         $link.click(function() {
